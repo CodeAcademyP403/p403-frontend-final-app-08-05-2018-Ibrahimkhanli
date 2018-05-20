@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WgBoard - Responsive Admin/Dashboard Template Preview - ThemeForest</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+
+    <div class="topHeader" id="topHeader">
+        <div class="envatoLogo">
+            <a href="https://themeforest.net/item/wgboard-responsive-admindashboard-template/21730214">Envato Market</a>
+        </div>
+
+        <div class="rightPart">
+            <div class="buyNow">
+                <a class="buyButton" href="https://themeforest.net/item/wgboard-responsive-admindashboard-template/21730214">Buy now</a>
+            </div>
+
+            <div class="closeNow">
+                <a href="#" onclick="closeTop()">
+                    <i class="fas fa-times"></i><span>Remove Frame</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <nav id="mainNav">
+
+        <div class="topNav" id="topNav">
+
+            <a class="wgBoard" id="wgBoard" href="#">
+                <div id="wgBoardBig">
+                    <span><strong>Wg</strong>Board</span>
+                </div>
+                <div id="wgBoardSmall">
+                    <span>Wg</span>
+                </div>
+            </a>
+
+            <div class="menuButton">
+                <a href="javascript:void(0)" class="menuToggle" onclick="leftNavShow()">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="navigationTop">
+
+                <ul class="navTop navTopLeft">
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="myDropdown('createDropdown', 'right')">
+                            <i class="dropbtn far fa-file"></i>
+                            <span class="dropbtn">Create</span>
+                            <i class="dropbtn fas fa-caret-down"></i>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="createDropdown">
+                            <li><a href="#">Publication</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Task Item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-mixcloud"></i>
+                            <span>File explorer</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navTop navTopRight">
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="myDropdown('notifyDropdown', 'left')">
+                            <i class="dropbtn far fa-bell"></i>
+                            <span class="dropbtn badge badge-danger">3</span>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="notifyDropdown">
+                            <li class="titleLi">Notifications</li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar3.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Phillip Sandoval</span> liked your post
+                                        <span class="notifTime">2 minutes ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar2.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Mary Riley</span> delegated case
+                                        <span class="notifTime">4 hours ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li> 
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar1.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Debra Burton</span> commented your post
+                                        <span class="notifTime">4 hours ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar4.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Nathan Nelson</span> followed you
+                                        <span class="notifTime">4 hours ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footerLi">
+                                <a href="#">See all notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="myDropdown('langDropdown', 'left')">
+                            <span class="dropbtn">En</span>
+                            <i class="dropbtn fas fa-caret-down"></i>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="langDropdown">
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Deutsch</a>
+                            </li>
+                            <li>
+                                <a href="#">France</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn dropdownProfile" onclick="myDropdown('profileDropdown', 'left')">
+                            <span class="dropbtn profName">Mary Riley</span>
+                            <i class="dropbtn fas fa-caret-down"></i>
+                            <div class="profAvatar">
+                                <div class="profAvatarImg">
+                                    <img class="dropbtn" src="images/avatar2.jpg">
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="profileDropdown">
+                            <li>
+                                <a href="#"><i class="far fa-user-circle"></i> Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-tasks"></i> Tasks</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="leftNav" id="leftNav">
+            <div class="leftNavContent">
+                <div class="leftNavSearch">
+                    <form class="leftNavSearchForm">
+                        <input type="text" placeholder="Search..." class="leftNavSearchInput" onclick="searchIc()">
+                        <div class="leftNavSearchInputDiv">
+                            <button class="btn btn-default" type="button" id="searchIcon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <ul class="leftNavNav">
+                    <li>
+                        <a href="javascript:void(0)" class="leftNavItem leftNavDropdownTogle" onclick="myCollapse('dashboard')">
+                            <i class="fas fa-home leftNavIcons"></i>
+                            <span class="leftNavSpans">Dashboard</span>
+                            <i class="fas fa-arrow-alt-circle-down leftNavIconsAfter"></i>
+                        </a>
+                        <ul class="myCollapse" id="dashboard">
+                            <li>
+                                <a href="index.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Main layout</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shop.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Online Shop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Blog Dashboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="leftNavItem leftNavDropdownTogle" onclick="myCollapse('uiElements')">
+                            <i class="fas fa-leaf leftNavIcons"></i>
+                            <span class="leftNavSpans">UI elements</span>
+                            <i class="fas fa-arrow-alt-circle-down leftNavIconsAfter"></i>
+                        </a>
+                        <ul class="myCollapse" id="uiElements">
+                            <li>
+                                <a href="badges.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Badges</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="labels.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Labels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listgroups.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">List groups</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pagination.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Pagination</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="panels.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="progressbars.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Progress bars</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="leftNavItem leftNavDropdownTogle" onclick="myCollapse('components')">
+                            <i class="fas fa-code leftNavIcons"></i>
+                            <span class="leftNavSpans">Components</span>
+                            <i class="fas fa-arrow-alt-circle-down leftNavIconsAfter"></i>
+                        </a>
+                        <ul class="myCollapse" id="components">
+                            <li>
+                                <a href="alerts.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Alerts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tooltips.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Tooltips</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="popovers.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Popovers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="modals.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Modals</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="buttons.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-square leftNavIcons"></i>
+                            <span class="leftNavSpans">Buttons</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-list-alt leftNavIcons"></i>
+                            <span class="leftNavSpans">Forms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tables.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-table leftNavIcons"></i>
+                            <span class="leftNavSpans">Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="charts.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-chart-line leftNavIcons"></i>
+                            <span class="leftNavSpans">Charts</span>
+                            <span class="badge badge-danger leftNavSpans">New</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="leftNavTitle">
+                    Summary Information
+                </div>
+                <div class="leftNavSummary">
+                    <div class="leftNavSummaryItem">
+                        <div class="leftNavSummaryTitle">
+                            Pending
+                            <span class="leftNavSummaryValue">37%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 36%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftNavSummaryItem">
+                        <div class="leftNavSummaryTitle">
+                            Approved
+                            <span class="leftNavSummaryValue">60%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftNavSummaryItem">
+                        <div class="leftNavSummaryTitle">
+                            Rejected
+                            <span class="leftNavSummaryValue">3%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<main class="myContainer" id="mainContainer">
+
+    <header class="mainHeader">
+        <div class="headerContainer">
+            <div class="row">
+                <div class="col-12">
+                    <ol class="myBreadcrumb">
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="active">
+                            <i class="fas fa-angle-right"></i>
+                            <a href="#">Buttons</a>
+                        </li>
+                    </ol>
+                    <div class="pageHeader">
+                        <h1>Buttons</h1>
+                        <h2>Buttons are one of the most integral elements of the page.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mainBody">
+        <div class="row">
+            <div class="col-12">
+                <div class="demo demoButtons">
+                    <div class="demoLayout">
+                        <div>
+                            <a class="demoBtn btnDefault btnDefaultHover" href="javascript:void(0)">Default Button</a>
+                            <a class="demoBtn btnPrimary btnPrimaryHover" href="javascript:void(0)">Primary Button</a>
+                            <a class="demoBtn btnInfo btnInfoHover" href="javascript:void(0)">Info Button</a>
+                        </div>
+                        <div>
+                            <a class="demoBtn btnSuccess btnSuccessHover" href="javascript:void(0)">Success Button</a>
+                            <a class="demoBtn btnWarning btnWarningHover" href="javascript:void(0)">Warning Button</a>
+                            <a class="demoBtn btnDanger btnDangerHover" href="javascript:void(0)">Danger Button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Colors. Supported classes
+                    </div>
+                    <div class="demoInfo">
+                        <ul>
+                            <li>
+                                <code>.btn-primary</code>
+                            </li>
+                            <li>
+                                <code>.btn-secondary</code>
+                            </li>
+                            <li>
+                                <code>.btn-primary-light</code>
+                            </li>
+                            <li>
+                                <code>.btn-secondary-light</code>
+                            </li>
+                            <li>
+                                <code>.btn-primary-dark</code>
+                            </li>
+                            <li>
+                                <code>.btn-secondary-dark</code>
+                            </li>
+                            <li>
+                                <code>.btn-default</code>
+                            </li>
+                            <li>
+                                <code>.btn-success</code>
+                            </li>
+                            <li>
+                                <code>.btn-info</code>
+                            </li>
+                            <li>
+                                <code>.btn-warning</code>
+                            </li>
+                            <li>
+                                <code>.btn-danger</code>
+                            </li>
+                            <li>
+                                <code>.btn-light</code>
+                            </li>
+                            <li>
+                                <code>.btn-dark</code>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div>
+                                <a class="demoBtn btnDefault btnDefaultHover" href="javascript:void(0)">Default Button</a>
+                                <a class="demoBtn btnPrimary btnPrimaryHover" href="javascript:void(0)">Primary Button</a>
+                                <a class="demoBtn btnInfo btnInfoHover" href="javascript:void(0)">Info Button</a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnSuccess btnSuccessHover" href="javascript:void(0)">Success Button</a>
+                                <a class="demoBtn btnWarning btnWarningHover" href="javascript:void(0)">Warning Button</a>
+                                <a class="demoBtn btnDanger btnDangerHover" href="javascript:void(0)">Danger Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Outline
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Add class <code>.btn-o</code> to get the outlined buttons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div>
+                                <a class="demoBtn btnDefaultHover" href="javascript:void(0)">Default Button</a>
+                                <a class="demoBtn btnPrimaryHover" href="javascript:void(0)">Primary Button</a>
+                                <a class="demoBtn btnInfoHover" href="javascript:void(0)">Info Button</a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnSuccessHover" href="javascript:void(0)">Success Button</a>
+                                <a class="demoBtn btnWarningHover" href="javascript:void(0)">Warning Button</a>
+                                <a class="demoBtn btnDangerHover" href="javascript:void(0)">Danger Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Icon buttons
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Use the icons on the buttons.
+                        </p>
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Add class <code>.btn-circle</code> to get the circle buttons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons demoMiniButtons">
+                        <div class="demoLayout">
+                            <div>
+                                <a class="demoBtn demoMiniBtn btnDefaultHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn demoMiniBtn btnPrimaryHover" href="javascript:void(0)"><i class="far fa-bell"></i></a>
+                                <a class="demoBtn demoMiniBtn btnInfoHover" href="javascript:void(0)"><i class="far fa-calendar-alt"></i></a>
+                                <a class="demoBtn btnDefault demoMiniBtn btnDefaultHover" href="javascript:void(0)"><i class="fas fa-camera"></i></i></a>
+                                <a class="demoBtn btnPrimary demoMiniBtn btnPrimaryHover" href="javascript:void(0)"><i class="far fa-clone"></i></a>
+                                <a class="demoBtn btnInfo demoMiniBtn btnInfoHover" href="javascript:void(0)"><i class="fas fa-code"></i></a>
+                            </div>
+                            <div>
+                                <a class="demoBtn demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn demoMiniBtn btnWarningHover" href="javascript:void(0)"><i class="far fa-bell"></i></a>
+                                <a class="demoBtn demoMiniBtn btnDangerHover" href="javascript:void(0)"><i class="far fa-calendar-alt"></i></a>
+                                <a class="demoBtn btnSuccess demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-camera"></i></i></a>
+                                <a class="demoBtn btnWarning demoMiniBtn btnWarningHover" href="javascript:void(0)"><i class="far fa-clone"></i></a>
+                                <a class="demoBtn btnDanger demoMiniBtn btnDangerHover" href="javascript:void(0)"><i class="fas fa-code"></i></a>
+                            </div>
+                            <div>
+                                <a class="demoBtn demoBtnCircle demoMiniBtn btnDefaultHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn demoBtnCircle demoMiniBtn btnPrimaryHover" href="javascript:void(0)"><i class="far fa-bell"></i></a>
+                                <a class="demoBtn demoBtnCircle demoMiniBtn btnInfoHover" href="javascript:void(0)"><i class="far fa-calendar-alt"></i></a>
+                                <a class="demoBtn demoBtnCircle btnDefault demoMiniBtn btnDefaultHover" href="javascript:void(0)"><i class="fas fa-camera"></i></i></a>
+                                <a class="demoBtn demoBtnCircle btnPrimary demoMiniBtn btnPrimaryHover" href="javascript:void(0)"><i class="far fa-clone"></i></a>
+                                <a class="demoBtn demoBtnCircle btnInfo demoMiniBtn btnInfoHover" href="javascript:void(0)"><i class="fas fa-code"></i></a>
+                            </div>
+                            <div>
+                                <a class="demoBtn demoBtnCircle demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn demoBtnCircle demoMiniBtn btnWarningHover" href="javascript:void(0)"><i class="far fa-bell"></i></a>
+                                <a class="demoBtn demoBtnCircle demoMiniBtn btnDangerHover" href="javascript:void(0)"><i class="far fa-calendar-alt"></i></a>
+                                <a class="demoBtn demoBtnCircle btnSuccess demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-camera"></i></i></a>
+                                <a class="demoBtn demoBtnCircle btnWarning demoMiniBtn btnWarningHover" href="javascript:void(0)"><i class="far fa-clone"></i></a>
+                                <a class="demoBtn demoBtnCircle btnDanger demoMiniBtn btnDangerHover" href="javascript:void(0)"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Custom styles
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Add classes <code>.btn-t</code> and <code>.btn-tc</code> (from <span class="myStrong">t</span>ransparent/-<span class="myStrong textPrimary">c</span>olored) to get transparent (default) buttons. The difference is only in the color of the text. You can combine <code>.btn-tc</code> with <code>.btn-tc-link</code>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div>
+                                <a class="demoBtn btnTc btnDefaultHover" href="javascript:void(0)">Default Button</a>
+                                <a class="demoBtn btnTc btnPrimaryHover" href="javascript:void(0)">Primary Button</a>
+                                <a class="demoBtn btnTc btnInfoHover" href="javascript:void(0)">Info Button</a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnTc textSuccess btnSuccessHover" href="javascript:void(0)">Success Button</a>
+                                <a class="demoBtn btnTc textWarning btnWarningHover" href="javascript:void(0)">Warning Button</a>
+                                <a class="demoBtn btnTc textDanger btnDangerHover" href="javascript:void(0)">Danger Button</a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnTc btnTcLink textInfo" href="javascript:void(0)">Info Button</a>
+                                <a class="demoBtn btnTc btnTcLink textDefault" href="javascript:void(0)">Default Button</a>
+                                <a class="demoBtn btnTc btnTcLink textSuccess" href="javascript:void(0)">Success Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Sizes
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Use <code>.btn-lg</code>, <code>.btn-sm</code>, <code>.btn-xs</code> for fast change button size.
+                            <code>.btn-block</code> will make your button full-width unit.
+                     </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div>
+                                <a class="demoBtn btnLg btnPrimary btnPrimaryHover" href="javascript:void(0)">Large Button</a>
+                                <a class="demoBtn btnLg btnPrimaryHover" href="javascript:void(0)">Large Button</a>
+                                <a class="demoBtn btnLg demoBtnCircle demoMiniBtn btnPrimaryHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn btnLg btnPrimary demoBtnCircle demoMiniBtn btnPrimaryHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnDefault btnDefaultHover" href="javascript:void(0)">Default Button</a>
+                                <a class="demoBtn btnDefaultHover" href="javascript:void(0)">Default Button</a>
+                                <a class="demoBtn demoBtnCircle demoMiniBtn btnDefaultHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn btnDefault demoBtnCircle demoMiniBtn btnDefaultHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnSm btnSuccess btnSuccessHover" href="javascript:void(0)">Small Button</a>
+                                <a class="demoBtn btnSm btnSuccessHover" href="javascript:void(0)">Small Button</a>
+                                <a class="demoBtn btnSm demoBtnCircle demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn btnSm btnSuccess demoBtnCircle demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnXs btnSuccess btnSuccessHover" href="javascript:void(0)">Extra Small</a>
+                                <a class="demoBtn btnXs btnSuccessHover" href="javascript:void(0)">Extra Small</a>
+                                <a class="demoBtn btnXs demoBtnCircle demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                                <a class="demoBtn btnXs btnSuccess demoBtnCircle demoMiniBtn btnSuccessHover" href="javascript:void(0)"><i class="fas fa-bolt"></i></a>
+                            </div>
+                            <div>
+                                <a class="demoBtn btnBlock btnDanger btnDangerHover" href="javascript:void(0)">Block Danger Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="demoSeparater">
+                    Button groups
+                    <div class="demoText">
+                        <p>
+                            Wrap a series of buttons into groups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Button groups
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div class="btnGroup">
+                                <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Left</button>
+                                <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Middle</button>
+                                <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Right</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Toolbars
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Combine sets of <code>.btn-group</code> into a <code>.btn-toolbar</code> for more complex components.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div class="btnToolbar">
+                                <div class="btnGroup">
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo"><i class="fas fa-pause"></i></button>
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo"><i class="fas fa-play"></i></button>
+                                </div>
+                                <div class="btnGroup">
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo"><i class="fas fa-backward"></i></button>
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo"><i class="fas fa-forward"></i></button>
+                                </div>
+                                <div class="btnGroup">
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo"><i class="fas fa-stop"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Vertical orientation
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Make a set of buttons appear vertically stacked rather than horizontally (<code>.btn-group-vertical</code>).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                 <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div class="btnGroup btnVerticalGroup">
+                                <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Left</button>
+                                <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Middle</button>
+                                <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Right</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Button groups sizes
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including when nesting multiple groups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div>
+                                <div class="btnGroup btnGroupLg">
+                                    <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Left</button>
+                                    <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Middle</button>
+                                    <button type="button" class="demoBtn btnPrimaryHover demoMiniBtn btnPrimary">Right</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="btnGroup">
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo">Left</button>
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo">Middle</button>
+                                    <button type="button" class="demoBtn btnInfoHover demoMiniBtn btnInfo">Right</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="btnGroup btnGroupSm">
+                                    <button type="button" class="demoBtn btnWarningHover demoMiniBtn btnWarning">Left</button>
+                                    <button type="button" class="demoBtn btnWarningHover demoMiniBtn btnWarning">Middle</button>
+                                    <button type="button" class="demoBtn btnWarningHover demoMiniBtn btnWarning">Right</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="btnGroup btnGroupXs">
+                                    <button type="button" class="demoBtn btnDangerHover demoMiniBtn btnDanger">Left</button>
+                                    <button type="button" class="demoBtn btnDangerHover demoMiniBtn btnDanger">Middle</button>
+                                    <button type="button" class="demoBtn btnDangerHover demoMiniBtn btnDanger">Right</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Justify button group
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            You can use <code>btn-group-justified</code> class.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div class="btnGroup btnGroupJustified">
+                                <button type="button" class="demoBtn btnInfoHover btnInfo">Left</button>
+                                <button type="button" class="demoBtn btnInfoHover btnInfo">Middle</button>
+                                <button type="button" class="demoBtn btnInfoHover btnInfo">Right</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Nesting
+                    </div>
+                    <div class="demoText">
+                        <p>
+                            Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="demoContent">
+                    <div class="demo demoButtons">
+                        <div class="demoLayout">
+                            <div class="btnGroup">
+                                <button type="button" class="demoBtn demoMiniBtn btnPrimaryHover btnPrimary">1</button>
+                                <button type="button" class="demoBtn demoMiniBtn btnPrimaryHover btnPrimary">2</button>
+                                <div class="btnGroup">
+                                    <button onclick="myDropdown('demoBtnTopDrp', 'right')" type="button" class="bR-0 demoBtn demoMiniBtn btnPrimaryHover btnPrimary dropbtn">DDown<i class="fas fa-caret-down ml-2"></i></button>
+                                    <ul class="myDropdownMenu dropdown-content" id="demoBtnTopDrp">
+                                        <li><a href="#">Dropdown link</a></li>
+                                        <li><a href="#">Dropdown link</a></li>
+                                    </ul>
+                                </div>
+                                <div style="margin-left: -5px;" class="btnGroup">
+                                    <button type="button" class="demoBtn demoMiniBtn btnPrimaryHover btnPrimary">DUp</button>
+                                    <button onclick="myDropdown('demoBtnTopDrp2', 'top')" type="button" class="bR-0 demoBtn demoMiniBtn btnPrimaryHover btnPrimary dropbtn"><i class="fas fa-caret-up"></i></button>
+                                    <ul class="myDropdownMenu dropdown-content" id="demoBtnTopDrp2">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
+
+    
+

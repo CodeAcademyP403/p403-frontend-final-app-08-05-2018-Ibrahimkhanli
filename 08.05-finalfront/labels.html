@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WgBoard - Responsive Admin/Dashboard Template Preview - ThemeForest</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+
+    <div class="topHeader" id="topHeader">
+        <div class="envatoLogo">
+            <a href="https://themeforest.net/item/wgboard-responsive-admindashboard-template/21730214">Envato Market</a>
+        </div>
+
+        <div class="rightPart">
+            <div class="buyNow">
+                <a class="buyButton" href="https://themeforest.net/item/wgboard-responsive-admindashboard-template/21730214">Buy now</a>
+            </div>
+
+            <div class="closeNow">
+                <a href="#" onclick="closeTop()">
+                    <i class="fas fa-times"></i><span>Remove Frame</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <nav id="mainNav">
+
+        <div class="topNav" id="topNav">
+
+            <a class="wgBoard" id="wgBoard" href="#">
+                <div id="wgBoardBig">
+                    <span><strong>Wg</strong>Board</span>
+                </div>
+                <div id="wgBoardSmall">
+                    <span>Wg</span>
+                </div>
+            </a>
+
+            <div class="menuButton">
+                <a href="javascript:void(0)" class="menuToggle" onclick="leftNavShow()">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="navigationTop">
+
+                <ul class="navTop navTopLeft">
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="myDropdown('createDropdown', 'right')">
+                            <i class="dropbtn far fa-file"></i>
+                            <span class="dropbtn">Create</span>
+                            <i class="dropbtn fas fa-caret-down"></i>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="createDropdown">
+                            <li><a href="#">Publication</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Task Item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-mixcloud"></i>
+                            <span>File explorer</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navTop navTopRight">
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="myDropdown('notifyDropdown', 'left')">
+                            <i class="dropbtn far fa-bell"></i>
+                            <span class="dropbtn badge badge-danger">3</span>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="notifyDropdown">
+                            <li class="titleLi">Notifications</li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar3.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Phillip Sandoval</span> liked your post
+                                        <span class="notifTime">2 minutes ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar2.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Mary Riley</span> delegated case
+                                        <span class="notifTime">4 hours ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li> 
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar1.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Debra Burton</span> commented your post
+                                        <span class="notifTime">4 hours ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <div class="notifAvatar">
+                                        <img src="images/avatar4.jpg">
+                                    </div>
+                                    <div class="notifBody">
+                                        <span class="notifName">Nathan Nelson</span> followed you
+                                        <span class="notifTime">4 hours ago</span>
+                                        <span class="notifState"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footerLi">
+                                <a href="#">See all notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="myDropdown('langDropdown', 'left')">
+                            <span class="dropbtn">En</span>
+                            <i class="dropbtn fas fa-caret-down"></i>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="langDropdown">
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Deutsch</a>
+                            </li>
+                            <li>
+                                <a href="#">France</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="myDropdown">
+                        <a href="javascript:void(0)" class="dropbtn dropdownProfile" onclick="myDropdown('profileDropdown', 'left')">
+                            <span class="dropbtn profName">Mary Riley</span>
+                            <i class="dropbtn fas fa-caret-down"></i>
+                            <div class="profAvatar">
+                                <div class="profAvatarImg">
+                                    <img class="dropbtn" src="images/avatar2.jpg">
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="myDropdownMenu dropdown-content" id="profileDropdown">
+                            <li>
+                                <a href="#"><i class="far fa-user-circle"></i> Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-tasks"></i> Tasks</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="leftNav" id="leftNav">
+            <div class="leftNavContent">
+                <div class="leftNavSearch">
+                    <form class="leftNavSearchForm">
+                        <input type="text" placeholder="Search..." class="leftNavSearchInput" onclick="searchIc()">
+                        <div class="leftNavSearchInputDiv">
+                            <button class="btn btn-default" type="button" id="searchIcon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <ul class="leftNavNav">
+                    <li>
+                        <a href="javascript:void(0)" class="leftNavItem leftNavDropdownTogle" onclick="myCollapse('dashboard')">
+                            <i class="fas fa-home leftNavIcons"></i>
+                            <span class="leftNavSpans">Dashboard</span>
+                            <i class="fas fa-arrow-alt-circle-down leftNavIconsAfter"></i>
+                        </a>
+                        <ul class="myCollapse" id="dashboard">
+                            <li>
+                                <a href="index.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Main layout</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shop.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Online Shop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Blog Dashboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="leftNavItem leftNavDropdownTogle" onclick="myCollapse('uiElements')">
+                            <i class="fas fa-leaf leftNavIcons"></i>
+                            <span class="leftNavSpans">UI elements</span>
+                            <i class="fas fa-arrow-alt-circle-down leftNavIconsAfter"></i>
+                        </a>
+                        <ul class="myCollapse" id="uiElements">
+                            <li>
+                                <a href="badges.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Badges</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="labels.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Labels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listgroups.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">List groups</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pagination.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Pagination</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="panels.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="progressbars.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Progress bars</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="leftNavItem leftNavDropdownTogle" onclick="myCollapse('components')">
+                            <i class="fas fa-code leftNavIcons"></i>
+                            <span class="leftNavSpans">Components</span>
+                            <i class="fas fa-arrow-alt-circle-down leftNavIconsAfter"></i>
+                        </a>
+                        <ul class="myCollapse" id="components">
+                            <li>
+                                <a href="alerts.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Alerts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tooltips.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Tooltips</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="popovers.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Popovers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="modals.html" class="leftNavItem">
+                                    <i class="far fa-circle leftNavSpans"></i>
+                                    <span class="leftNavSpans">Modals</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="buttons.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-square leftNavIcons"></i>
+                            <span class="leftNavSpans">Buttons</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-list-alt leftNavIcons"></i>
+                            <span class="leftNavSpans">Forms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tables.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-table leftNavIcons"></i>
+                            <span class="leftNavSpans">Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="charts.html" class="leftNavItem leftNavDropdownTogle">
+                            <i class="fas fa-chart-line leftNavIcons"></i>
+                            <span class="leftNavSpans">Charts</span>
+                            <span class="badge badge-danger leftNavSpans">New</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="leftNavTitle">
+                    Summary Information
+                </div>
+                <div class="leftNavSummary">
+                    <div class="leftNavSummaryItem">
+                        <div class="leftNavSummaryTitle">
+                            Pending
+                            <span class="leftNavSummaryValue">37%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 36%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftNavSummaryItem">
+                        <div class="leftNavSummaryTitle">
+                            Approved
+                            <span class="leftNavSummaryValue">60%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftNavSummaryItem">
+                        <div class="leftNavSummaryTitle">
+                            Rejected
+                            <span class="leftNavSummaryValue">3%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<main class="myContainer" id="mainContainer">
+
+    <header class="mainHeader">
+        <div class="headerContainer">
+            <div class="row">
+                <div class="col-12">
+                    <ol class="myBreadcrumb">
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="active">
+                            <i class="fas fa-angle-right"></i>
+                            <a href="#">Labels</a>
+                        </li>
+                    </ol>
+                    <div class="pageHeader">
+                        <h1>Labels</h1>
+                        <h2>Use the "label" class to highlight elements.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mainBody">
+        <div class="row">
+            <div class="col-12">
+                <div class="demo demoLabel">
+                    <div class="demoLayout">
+                        <div class="demoBody">
+                           <table class="myTable table1">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Login</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Mcneil, Burke Q.</td>
+                                        <td>
+                                            <span class="primary">  Emery_Mullen</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Burris, Lesley T.</td>
+                                        <td>
+                                            <span class="info">Eleanor_Cole</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sears, Drew G.</td>
+                                        <td>
+                                            <span class="danger">Pandora_Bender</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Oconnor, Jocelyn A.</td>
+                                        <td>
+                                            <span class="primary">Abdul_Logan</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Stewart, Anika M.</td>
+                                        <td>
+                                            <span class="info">Eaton_Morris</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="demoHeader">
+                    <div class="demoTitle">
+                        Contextual alternatives
+                    </div>
+                    <div class="demoText">
+                        You can specify the color of the labels using contextual classes.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="demoContent demoLabel">
+                    <div>
+                        Table of label classes
+                    </div>
+                    <div class="demoBody">
+                        <table class="myTable table2">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Badge</th>
+                                    <th>Class</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Primary</td>
+                                    <td>
+                                        <span class="btnPrimary">primary</span>
+                                    </td>
+                                    <td><code>.label.label-primary</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary | Default</td>
+                                    <td>
+                                        <span class="btnDefault">default</span>
+                                    </td>
+                                    <td><code>.label.label-secondary</code> | <code>.label.label-default</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Success</td>
+                                    <td>
+                                        <span class="btnSuccess">success</span>
+                                    </td>
+                                    <td><code>.label.label-success</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Info</td>
+                                    <td>
+                                        <span class="btnInfo">info</span>
+                                    </td>
+                                    <td><code>.label.label-info</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Warning</td>
+                                    <td>
+                                        <span class="btnWarning">warning</span>
+                                    </td>
+                                    <td><code>.label.label-warning</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Danger</td>
+                                    <td>
+                                        <span class="btnDanger">danger</span>
+                                    </td>
+                                    <td><code>.label.label-danger</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Dark</td>
+                                    <td> 
+                                        <span class="btnDark">dark</span>
+                                    </td>
+                                    <td><code>.label.label-dark</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Light</td>
+                                    <td>
+                                        <span class="btnLight">light</span>
+                                    </td>
+                                    <td><code>.label.label-light</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
+
+    
+
